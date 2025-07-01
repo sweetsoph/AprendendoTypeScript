@@ -24,5 +24,9 @@ const fun3 = (value: string | number): boolean => { // é possível determinar q
     return true
 }
 
+let colors: 'red' | 'green' | 'blue' = 'red'; // define uma variável que só pode receber um dos valores especificados
+colors = 'green'; // deixa pois é um dos valores especificados
+// colors = 'yellow'; // não deixa pois não é um dos valores especificados
+
 fun3("Olá, mundo!"); // deixa pois a função aceita string ou number
 fun3(123); // deixa pois a função aceita string ou number
